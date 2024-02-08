@@ -67,6 +67,7 @@ h1{
     display: grid;
     grid-template-columns: 80px 1fr 80px;
     grid-template-rows: 60px auto 0.2fr 2.5fr 0.6fr 2fr 0.8fr;
+    scroll-behavior: smooth;
 }
 
 
@@ -74,11 +75,12 @@ h1{
     font-family: roboto;
     font-size: 4rem; 
     grid-row-start: 2;
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end:-1; 
+    grid-column-start: 1; 
+    padding-left: 80px;
 }
 
-.container{
+.container1{
     grid-column-start: 2;
     grid-row-start: 4;
     gap: 10%;
@@ -88,7 +90,7 @@ h1{
 
 .box{
     border: 5px solid #213555;
-    width: 30%;
+    width: 35%;
     height: 90%;
     padding: 30px;
     border-radius: 30px;
@@ -97,8 +99,8 @@ h1{
     flex-direction: column;
     align-content: center;
     align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
+    justify-content: space-between;
+    font-size: 1.3rem;
     font-family: roboto;
     text-align: center;
 }
@@ -129,9 +131,29 @@ h1{
     margin:0;
     background-color: #4F709C;
     display: grid;
-    grid-template-columns: 80px 1fr 80px;
-    grid-template-rows: 60px auto 0.05fr 1fr 1fr 1fr;
+    grid-template-columns: 80px 2fr 0.6fr 80px;
+    grid-template-rows: 60px auto 1fr;
+    scroll-behavior: smooth;
 }
+
+.container_work{
+    display: flex;
+    margin-right: 0;
+    padding-right:0;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-column-end: 3;
+}
+
+.container_work2{
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 3;
+    grid-row-start: 3;
+    align-items: center;
+    gap: 8%;
+}
+
 .download_app {
   display: inline-flex;
   justify-content: center;
@@ -147,3 +169,54 @@ h1{
     height: 100%;
 }
 
+#about-me{
+    scroll-behavior: smooth;
+    padding:0;
+    margin:0;
+    background-color: #F0F0F0;
+    display: grid;
+    grid-template-rows: 0 auto 3fr 0.7fr;
+    grid-template-columns: 80px 1fr 80px;
+}
+
+.container_about{
+    display: flex;
+    flex-direction: column;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    font-family: roboto;
+    font-size: 1.3rem;
+    padding-top: 20px;
+    text-align: justify;
+    line-height: 2;
+}
+
+.contact_buttons{
+    display: inline-flex;
+    justify-content: center;
+    gap: 50%;
+    padding-top:0;
+}
+
+.contact_buttons > div img{
+    width: 4rem;
+}
+
+.footer{
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: roboto;
+}
+
+.footer_scroll{
+    color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 30px;
+}
