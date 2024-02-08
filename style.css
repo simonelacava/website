@@ -1,0 +1,149 @@
+body{
+    padding:0;
+    margin:0;
+}
+
+h1{
+    font-size: 6rem;
+    font-weight: 700;
+    margin:0;
+}
+
+
+#home .grid {
+    background-color: #213555;
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr 70px;
+    grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+    gap: 10px;
+    color: #F0F0F0;
+    font-family: roboto;
+    height: 90vh;
+    margin: 0px;
+
+}
+
+#profile-img{
+    height: 100%;
+    width: 100%;
+    grid-area: 2 / 3 / 4 / 3;
+    border-radius: 10%;
+}
+
+#home .grid .flex{
+    grid-area: 2 / 2 / 4 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: larger;
+    gap:5px
+}
+
+.button1{
+    background-color: F0F0F0;
+    text-align: center;
+    border-radius: 35px;
+    width: 40%;
+    font-size: 2rem;
+    font-family: roboto;
+    color: #213555;
+    padding:20px;
+    border: 1px solid #F0F0F0;
+}
+
+
+.dark-blue{
+    color: #213555;
+}
+.white{
+    color: #F0F0F0;
+}
+
+
+#resume{
+    padding:0;
+    margin:0;
+    background-color: #F0F0F0;
+    display: grid;
+    grid-template-columns: 80px 1fr 80px;
+    grid-template-rows: 60px auto 0.2fr 2.5fr 0.6fr 2fr 0.8fr;
+}
+
+
+.headers{
+    font-family: roboto;
+    font-size: 4rem; 
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.container{
+    grid-column-start: 2;
+    grid-row-start: 4;
+    gap: 10%;
+    display: flex;
+}
+
+
+.box{
+    border: 5px solid #213555;
+    width: 30%;
+    height: 90%;
+    padding: 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: roboto;
+    text-align: center;
+}
+
+.button-yellow{
+    background-color: #E5D283;
+    display: block;
+    text-align: center;
+    border-radius: 35px;
+    width: 60%;
+    font-size: 1.5rem;
+    font-family: roboto;
+    color: #213555;
+    margin-top:30px;
+    padding:10px;
+    border: 3px solid #213555;
+}
+
+.bottom{
+    grid-column-start: 2;
+    grid-row-start: 6;
+    display: flex;
+    justify-content: center;
+}
+
+#work{
+    padding:0;
+    margin:0;
+    background-color: #4F709C;
+    display: grid;
+    grid-template-columns: 80px 1fr 80px;
+    grid-template-rows: 60px auto 0.05fr 1fr 1fr 1fr;
+}
+.download_app {
+  display: inline-flex;
+  justify-content: center;
+  gap: 5%
+}
+
+.download_app > div{
+    width: 1fr;
+}
+
+.download_app > div img{
+    width: 100%;
+    height: 100%;
+}
+
